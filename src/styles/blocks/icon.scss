@@ -1,0 +1,32 @@
+@use '../utils/mixins';
+
+.icon {
+  display: block;
+  height: 24px;
+  width: 24px;
+  background-size: cover;
+  transition: transform 0.3s;
+
+  @include mixins.hover(transform, scale(1.2));
+
+  &--phone {
+    background-image: url(/src/images/icons/phone-icon.png);
+  }
+
+  &--menu {
+    background-image: url(/src/images/icons/burger-icon.png);
+
+    &:hover {
+      background-image: url(/src/images/icons/burger-icon-hover.png);
+    }
+  }
+
+  &--close {
+    background-image: url(/src/images/icons/icon-close-small.png);
+  }
+
+  @include mixins.on-tablet {
+    height: 32px;
+    width: 32px;
+  }
+}
