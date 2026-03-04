@@ -1,5 +1,6 @@
+@use '../utils/mixins';
+
 .contact-data {
-  letter-spacing: 0;
   line-height: 140%;
 
   &__elements {
@@ -20,8 +21,9 @@
 
   &__value {
     margin: 0;
-    font-family: 'Space Mono', monospace;
-    font-weight: 400;
+
+    @include mixins.space-mono-font;
+
     font-size: 16px;
     color: #191919;
   }

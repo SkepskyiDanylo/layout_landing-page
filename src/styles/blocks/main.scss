@@ -1,7 +1,8 @@
 @use '../utils/mixins';
+@use '../utils/variables';
 
 .main {
-  background-color: #fff;
+  background-color: variables.$background-color;
 
   &__content {
     display: grid;

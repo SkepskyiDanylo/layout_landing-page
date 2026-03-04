@@ -1,7 +1,6 @@
 @use '../utils/mixins';
 
 .product {
-  letter-spacing: 0;
   line-height: 140%;
 
   &__photo {
@@ -18,8 +17,8 @@
   }
 
   &__description {
-    font-family: 'Space Mono', monospace;
-    font-weight: 400;
+    @include mixins.space-mono-font;
+
     font-size: 16px;
     margin: 0;
     margin-bottom: 12px;

@@ -45,6 +45,11 @@
   }
 }
 
+@mixin space-mono-font {
+  font-family: 'Space Mono', monospace;
+  font-weight: 400;
+}
+
 @mixin hover($property, $toValue) {
   transition: #{$property} #{variables.$effectDuration};
 

@@ -1,20 +1,23 @@
+@use '../utils/variables';
+@use '../utils/mixins';
+
 .form {
   &__input {
     display: block;
     margin-bottom: 16px;
-    font-family: 'Space Mono', monospace;
-    font-weight: 400;
+
+    @include mixins.space-mono-font;
+
     font-size: 14px;
     line-height: 140%;
-    letter-spacing: 0;
-    color: #292929;
+    color: variables.$main-color;
     background-color: #f8f8fa;
     box-sizing: border-box;
     border-radius: 8px;
     padding: 14px 16px;
     border: 1px solid #f8f8fa;
     height: 48px;
-    transition: all 0.3s;
+    transition: all #{variables.$effectDuration};
     width: 100%;
 
     &--textarea {
@@ -32,7 +35,7 @@
 
     &:focus-visible {
       outline: none;
-      border: 1px solid #292929;
+      border: 1px solid #{variables.$main-color};
     }
   }
 }

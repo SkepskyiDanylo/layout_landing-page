@@ -18,13 +18,12 @@
   }
 
   &__content {
-    grid-column: 1/-1;
+    @include mixins.space-mono-font;
 
-    font-family: 'Space Mono', monospace;
-    font-weight: 400;
     font-size: 16px;
     line-height: 140%;
-    letter-spacing: 0;
+
+    grid-column: 1/-1;
 
     @include mixins.on-tablet {
       grid-column: 4 / 7;

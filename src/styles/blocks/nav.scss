@@ -1,3 +1,5 @@
+@use '../utils/variables';
+
 .nav {
   &__link {
     position: relative;
@@ -14,8 +16,8 @@
       position: absolute;
       bottom: -4px;
       height: 1px;
-      background-color: #292929;
-      transition: transform 0.3s;
+      background-color: variables.$main-color;
+      transition: transform #{variables.$effectDuration};
       transform: scale(0);
       transform-origin: left;
     }

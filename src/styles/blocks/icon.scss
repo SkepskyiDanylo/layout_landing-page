@@ -1,11 +1,12 @@
 @use '../utils/mixins';
+@use '../utils/variables';
 
 .icon {
   display: block;
   height: 24px;
   width: 24px;
   background-size: cover;
-  transition: transform 0.3s;
+  transition: transform #{variables.$effectDuration};
 
   @include mixins.hover(transform, scale(1.2));
 

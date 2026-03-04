@@ -1,10 +1,12 @@
+@use '../utils/variables';
+
 .page {
   font-family: 'Space Grotesk', sans-serif;
-  color: #292929;
+  color: variables.$main-color;
   font-size: 16px;
   line-height: 140%;
   font-weight: 700;
-
+  letter-spacing: variables.$default-letter-spacing;
   scroll-behavior: smooth;
 
   &__body {
@@ -18,7 +20,7 @@
     left: 0;
     right: 0;
 
-    transition: all 0.3s;
+    transition: all #{variables.$effectDuration};
     pointer-events: none;
     opacity: 0;
     transform: translateX(100%);

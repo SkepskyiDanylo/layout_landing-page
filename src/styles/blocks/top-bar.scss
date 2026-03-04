@@ -1,4 +1,5 @@
 @use '../utils/mixins';
+@use '../utils/variables';
 
 .top-bar {
   padding-block: 24px;
@@ -22,7 +23,7 @@
   &__logo {
     height: 16px;
     width: 125px;
-    transition: transform 0.3s;
+    transition: transform #{variables.$effectDuration};
 
     @include mixins.hover(transform, scale(1.2));
 
