@@ -1,4 +1,5 @@
 @use '../utils/variables';
+@use '../utils/mixins';
 
 .nav {
   &__link {
@@ -9,22 +10,7 @@
     line-height: 22px;
     letter-spacing: 2px;
 
-    &::after {
-      content: '';
-      display: block;
-      width: 100%;
-      position: absolute;
-      bottom: -4px;
-      height: 1px;
-      background-color: variables.$main-color;
-      transition: transform #{variables.$effectDuration};
-      transform: scale(0);
-      transform-origin: left;
-    }
-
-    &:hover::after {
-      transform: scale(1);
-    }
+    @include mixins.hover-underline;
   }
 
   &__list {

@@ -61,7 +61,7 @@
     width: 100%;
     object-fit: cover;
 
-    @include mixins.hover(transform, scale(1.2));
+    @include mixins.hover(transform, scale(1.05));
   }
 
   &__title {

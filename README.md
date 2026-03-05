@@ -76,4 +76,3 @@ npm start
 > entered the market.\
 > This page is inspired by my personal experience and appreciation of
 > Nothing's product philosophy and design approach.
-
