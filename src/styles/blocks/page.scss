@@ -9,6 +9,10 @@
   letter-spacing: variables.$default-letter-spacing;
   scroll-behavior: smooth;
 
+  &:has(&__menu:target) {
+    overflow: hidden;
+  }
+
   &__body {
     margin: 0;
     min-width: 320px;
@@ -29,6 +33,7 @@
       opacity: 1;
       transform: translateX(0);
       pointer-events: all;
+      overflow: hidden;
     }
   }
 }

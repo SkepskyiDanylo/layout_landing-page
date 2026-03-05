@@ -226,9 +226,9 @@
         <div class="contact__wrapper">
           <div class="contact__form">
             <form action="#" class="form" onsubmit="this.reset(); return false;">
-              <input id="name" type="text" class="form__input form__input--text" placeholder="Name">
-              <input id="email" type="text" class="form__input form__input--text" placeholder="Email">
-              <textarea id="message" class="form__input form__input--textarea" placeholder="Message"></textarea>
+              <input id="name" type="text" required class="form__input form__input--text" placeholder="Name">
+              <input id="email" type="email" required class="form__input form__input--text" placeholder="Email">
+              <textarea id="message" required class="form__input form__input--textarea" placeholder="Message"></textarea>
               <button type="submit" class="button form__button">Send</button>
             </form>
 
